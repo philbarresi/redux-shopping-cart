@@ -7,7 +7,7 @@ class ProductList extends Component {
   render() {
     return (
       <div>
-        {this.props.products.map(x => (
+        {this.props.productListing.map(x => (
           <ProductRow
             addToCart={this.props.addToCart}
             product={x}
@@ -21,7 +21,7 @@ class ProductList extends Component {
 
 const mapStateToProps = state => {
   return {
-    products: state.products
+    productListing: state.products
   };
 };
 

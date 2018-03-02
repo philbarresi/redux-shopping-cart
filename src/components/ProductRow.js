@@ -13,7 +13,7 @@ export default function ProductRow({ product, addToCart }) {
     <Card className="mb-4">
       <CardBody>
         <CardTitle>{product.name}</CardTitle>
-        <CardSubtitle>{product.cost}</CardSubtitle>
+        <CardSubtitle>${product.cost.toFixed(2)}</CardSubtitle>
         <CardText>{product.description}</CardText>
         <Button onClick={() => addToCart(product.id, 1)}>
           Add 1 to Cart

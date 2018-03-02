@@ -39,7 +39,6 @@ class DropdownCart extends React.Component {
       }, 0)
       .toFixed(2);
 
-
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret color="link">
