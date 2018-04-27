@@ -54,7 +54,7 @@ class DropdownCart extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    productDictionary: state.products.reduce((dict, product) => {
+    productDictionary: state.products.listing.reduce((dict, product) => {
       dict[product.id] = product;
       return dict;
     }, {}),
